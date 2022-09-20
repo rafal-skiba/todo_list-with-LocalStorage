@@ -1,15 +1,15 @@
 :root {
-    --primary: rgba(234, 64, 164, 0.75);
-    --business: #3a82fe;
+    --primary: rgba(94, 81, 214, 0.75);
+    --business: #3cc966;
     --personal: var(--primary);
     --light: #eee;
     --dark: #313154;
-    --danger: #ff5b57;
+    --danger: #e48280;
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     --grey: #999;
 
-    --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-    --personal-glow: 0px 0px 4px rgb(234, 64, 164, 0.75);
+    --business-glow: 0px 0px 4px rgba(23, 77, 32, 0.75);
+    --personal-glow: 0px 0px 4px rgba(15, 12, 41, 0.75);
 }
 
 * {
@@ -105,10 +105,12 @@ h4 {
 
 input[type="radio"] {
 	display: none;
+	
 }
 
 input[type="checkbox"] {
 	display: none;
+	
 }
 
 .bubble {
@@ -120,6 +122,7 @@ input[type="checkbox"] {
 	border-radius: 50%;
 	border: solid 2px var(--business);
 	box-shadow: var(--business-glow);
+	margin-bottom: 7px;
 }
 
 .bubble.personal {
@@ -229,5 +232,6 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input{
 	text-decoration: line-through;
 	color: var(--grey);
+	opacity: 0.7;
 }
 
