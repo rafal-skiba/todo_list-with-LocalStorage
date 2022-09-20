@@ -27,7 +27,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 	background: none;
 	cursor: initial;
 }
-/* End of Resets */
+
 
 body {
 	background: var(--light);
@@ -55,22 +55,27 @@ h4 {
 	margin-bottom: 0.5rem;
 }
 
-.greeting .title {
+.greeting {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--primary);
+	border-radius: 0.7rem;
+	padding: 1rem;
+	margin: 1rem 1.5rem;
+	color: #FFF;
 }
 
-.greeting .title input {
-	margin-left: 0.5rem;
-	flex: 1 1 0%;
-	min-width: 0;
+.greeting p {
+	background-color: var(--light);
+	font-size: 0.65rem;
+	color: var(--primary);
+	border-radius: 0.7rem;
+	padding: 0.8rem;
+	
 }
 
-.greeting .title, 
-.greeting .title input {
-	color: var(--dark);
-	font-size: 1.5rem;
-	font-weight: 700;
-}
+
 
 .create-todo input[type="text"] {
 	display: block;
@@ -190,7 +195,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-list .todo-content {
-	flex-grow: 1;
+	flex: 1 1 0%;
 	
 }
 
@@ -202,11 +207,14 @@ input:checked ~ .bubble::after {
 .actions {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
 }
 
 .actions button {
 	display: block;
-	padding: 0.7rem;
+	width: 5rem;
+	padding: 0.5rem;
 	border-radius: 0.7rem;
 	background-color: #FFF;
 	cursor: pointer;
