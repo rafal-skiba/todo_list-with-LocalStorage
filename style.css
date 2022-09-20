@@ -108,6 +108,7 @@ h4 {
 	cursor: pointer;
 }
 
+
 input[type="radio"] {
 	display: none;
 	
@@ -188,6 +189,11 @@ input:checked ~ .bubble::after {
 	margin-top: 1rem;
 }
 
+.todo-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .todo-item label {
 	display: block;
 	margin-right: 1rem;
@@ -202,13 +208,15 @@ input:checked ~ .bubble::after {
 .todo-content input {
 	color: var(--dark);
 	font-size: 1rem;
+	
+	
 }
 
 .actions {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	flex-wrap: wrap;
+
 }
 
 .actions button {
